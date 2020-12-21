@@ -24,6 +24,12 @@ int	main(void)
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
 	cout << boxy4 << endl;
+	this_thread::sleep_for(chrono::seconds(1));
+	system("clear");
+	cout << boxy5 << endl;
+	this_thread::sleep_for(chrono::seconds(1));
+	system("clear");
+	print_card("jonas is cool :)", "Jonas");
 	this_thread::sleep_for(chrono::seconds(2));
 	return (0);
 }
