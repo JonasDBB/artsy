@@ -5,6 +5,7 @@
 #include "boxies.hpp"
 
 void		print_card(std::string news, std::string name);
+void		print_card2(std::string news, std::string name);
 
 using namespace std;
 
@@ -29,7 +30,16 @@ int	main(void)
 	cout << boxy5 << endl;
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card("jonas is cool :)", "Jonas");
+	print_card("Jonas is cool :)", "Jonas");
+	this_thread::sleep_for(chrono::seconds(1));
+	system("clear");
+	print_card2("Jonas is cool :)", "Jonas");
+	this_thread::sleep_for(chrono::seconds(1));
+	system("clear");
+	print_card("Jonas is cool :)", "Jonas");
+	this_thread::sleep_for(chrono::seconds(1));
+	system("clear");
+	print_card2("Jonas is cool :)", "Jonas");
 	this_thread::sleep_for(chrono::seconds(2));
 	return (0);
 }
