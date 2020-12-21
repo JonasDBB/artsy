@@ -6,7 +6,7 @@
 /*   By: rixt <marvin@codam.nl>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/21 18:50:56 by rixt          #+#    #+#                 */
-/*   Updated: 2020/12/21 22:12:13 by rixt          ########   odam.nl         */
+/*   Updated: 2020/12/21 22:25:48 by jonasbb       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,8 @@ void		print_card(std::string news, std::string name)
 	std::cout << "|______________________________________________________________|\n" << CL;
 }
 
-int			main(void)
-{
-	print_card("hello this is news", "Rixt");
-	return(0);
-}
+// int			main(void)
+// {
+// 	print_card("hello this is news", "Rixt");
+// 	return(0);
+// }
