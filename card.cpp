@@ -6,46 +6,76 @@
 /*   By: rixt <marvin@codam.nl>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/21 18:50:56 by rixt          #+#    #+#                 */
-/*   Updated: 2020/12/21 20:21:55 by rixt          ########   odam.nl         */
+/*   Updated: 2020/12/21 22:12:13 by rixt          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 
+#define GR	"\033[38;5;46m"
+#define YW	"\033[38;5;220m"
+#define RD	"\033[38;5;196m"
+#define CL	"\033[0m"
 
 void		print_card(std::string news, std::string name)
 {
 	int newslen = news.length();
 	int namelen = name.length();
-	
-	std::cout << "_______________________________________________________________\n";
-	
-	std::cout << "|   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.  |\n";
-	std::cout << "|\\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ |\n";
-	std::cout << "|-`-'     `-`-'     `-`-'     `-`-'     `-`-'     `-`-'     `-`|\n";
+
+	std::cout << RD << ".______________________________________________________________.\n";
 	std::cout << "|                                                              |\n";
-	std::cout << "|    Dear " << name << ",";
+
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << "   " << GR << ".-." << YW << "*" << GR << ".-." << RD;
+	std::cout << "  |\n";
+
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << GR << "\\ / /   \\ ";
+	std::cout << "\\" << RD << " |\n";
+
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << GR << "-`-'     `";
+	std::cout << "-`" << RD << "|\n";
+
+	std::cout << "|                                                              |\n";
+	std::cout << RD << "|" << CL << "    Dear " << name << ",";
 	for (int i = 0; i < 52-namelen; i++)
 		std::cout << " ";
-	std::cout << "|\n";
+	std::cout << RD << "|\n";
+
 	std::cout << "|                                                              |\n";
-	std::cout << "|    Now for something positive:                               |\n";
+	std::cout << "|" << CL << "    Positive news from 2020:                                  " << RD << "|\n";
 	std::cout << "|                                                              |\n";
-	std::cout << "|    " << news;
+	std::cout << "|    " << CL << news;
 	for (int i = 0; i < 58-newslen; i++)
 		std::cout << " ";
-	std::cout << "|\n";
+	std::cout << RD << "|\n";
 	std::cout << "|                                                              |\n";
-	std::cout << "|    Sincerely,                                                |\n";
-	std::cout << "|    Santa                                                     |\n";
+	std::cout << "|" << CL << "    Sincerely,                                                " << RD << "|\n";
+	std::cout << "|" << CL << "    Santa                                                     " << RD << "|\n";
 	std::cout << "|                                                              |\n";
-	std::cout << "|   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.   .-.*.-.  |\n";
-	std::cout << "|\\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ / /   \\ \\ |\n";
-	std::cout << "|-`-'     `-`-'     `-`-'     `-`-'     `-`-'     `-`-'     `-`|\n";
-	std::cout << "|______________________________________________________________|\n";
-}
 
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << "   " << GR << ".-." << YW << "*" << GR << ".-." << RD;
+	std::cout << "  |\n";
+
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << GR << "\\ / /   \\ ";
+	std::cout << "\\ " << RD  << "|\n";
+
+	std::cout << "|";
+	for (int i = 0; i < 6; i++)
+		std::cout << GR << "-`-'     `";
+	std::cout << "-`" << RD << "|\n";
+
+	std::cout << "|______________________________________________________________|\n" << CL;
+}
 
 int			main(void)
 {
