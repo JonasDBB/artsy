@@ -114,7 +114,7 @@ int	main(int argc, char **argv)
 	"Animal Crossing New Horizons came out this year!",\
 	"Among us got a major popularity boost!",\
 	"Jeffrey made a beautiful Discord for us~",\
-	"Same-sex marriage legislation in Northern Ireland. 💖",\
+	"Same-sex marriage legislation in Northern Ireland.",\
 	"Trump is not re-elected as President of the USA.",\
 	"We got to know our new staff member Yasmine.",\
 	"We got to know our new staff member Victoria.",\
