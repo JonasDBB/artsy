@@ -96,6 +96,7 @@ int	main(int argc, char **argv)
     "A 100-Year-Old Tortoise Saved His Species! 🐢",\
     "Whales returned to New York City. 🐳",\
     "Lions were born in Amersfoort Zoo. 🦁", \
+	"Pete Buttigieg first LGBTQ American cabinet nominee. 🏳️‍🌈", \
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
     "Sweden went coal-free.",\
@@ -117,8 +118,7 @@ int	main(int argc, char **argv)
 	"Same-sex marriage legislation in Northern Ireland.",\
 	"Trump is not re-elected as President of the USA.",\
 	"We got to know our new staff member Yasmine.",\
-	"We got to know our new staff member Victoria.",\
-	"Pete Buttigieg first LGBTQ American cabinet nominee. 🏳️‍🌈"\
+	"We got to know our new staff member Victoria."\
 	};
 
 	int exit = 0;
@@ -129,7 +129,7 @@ int	main(int argc, char **argv)
 		i++;
 		card = pickACard();
 		bool hasemoji = false;
-		if (card >=3 && card <= 7)
+		if (card >=3 && card <= 8)
 			hasemoji = true;
 		print_card(news[card], name, hasemoji);
 		this_thread::sleep_for(chrono::seconds(1));
