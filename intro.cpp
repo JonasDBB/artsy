@@ -80,9 +80,3 @@ void intro()
 		this_thread::sleep_for(chrono::seconds(1));
 		system ("clear");   
 }   
-
-//int main()
-//{
-//	intro();
-//	return (0);
-//}

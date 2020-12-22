@@ -6,7 +6,7 @@
 /*   By: rixt <marvin@codam.nl>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/21 18:50:56 by rixt          #+#    #+#                 */
-/*   Updated: 2020/12/22 09:56:44 by rixt          ########   odam.nl         */
+/*   Updated: 2020/12/22 13:30:42 by jonasbb       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@
 #define RD	"\033[38;5;196m"
 #define CL	"\033[0m"
 
-void		print_card(std::string news, std::string name)
+void		print_card(std::string news, std::string name, bool hasemoji)
 {
 	int newslen = news.length();
+	if (hasemoji)
+		newslen -= 2;
 	int namelen = name.length();
 
 	std::cout << RD << ".______________________________________________________________.\n";
@@ -79,9 +81,11 @@ void		print_card(std::string news, std::string name)
 
 
 
-void		print_card2(std::string news, std::string name)
+void		print_card2(std::string news, std::string name, bool hasemoji)
 {
 	int newslen = news.length();
+	if (hasemoji)
+		newslen -= 2;
 	int namelen = name.length();
 
 	std::cout << RD << ".______________________________________________________________.\n";
