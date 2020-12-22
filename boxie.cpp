@@ -4,7 +4,7 @@
 #include <string.h>
 #include <fstream>
 #include "boxies.hpp"
-#define CARDS 5
+#define CARDS 16
 
 void		print_card(std::string news, std::string name);
 void		print_card2(std::string news, std::string name);
@@ -80,20 +80,37 @@ int	main(int argc, char **argv)
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
 	
-	//int card = pickACard();
+	int card = pickACard();
+	std::string news[] = {"There has not been a corona outbreak at Codam.",\
+    "We were able to host 3 piscines during the pandemic.",\
+    "We welcomed a new cohort!",\
+    "There was a panda born in Ouwehands Dierenpark. :)",\
+    "An elephant was born in Artis.",\
+    "100-Year-Old Tortoise Saved His Species",\
+    "Whales returned to New York City",\
+    "Lions were born in Amersfoort.", \
+    "Jupiter and Saturn aligned again. The last time was 1623!",\
+    "No new cases of wild poliovirus recorded since 2016.",\
+    "Sweden went coal-free.",\
+    "Lower air pollution during lockdown said to improve crops",\
+    "Cat missing for three years was reunited with UK owner.",\
+	"Victor Glover first black long-term astronaut at ISS.",\
+	"Lower air pollution may improve crop production",\
+	"Number of unemployed people drops for third month in row.",\
+	"Pet adoptions have increased dramatically.",\
+	"Mother Nature is getting a much-needed respite.",\
+	"Netherlands winner of Eurovision for second year in row."};
 
-
-	/* Hi team, this code below is for now, because it works. But it cant show the randomization in pickACard function from Jonas, so Jonas is going to put these lines where they belong, because this is an animation and it looks cool, so i hope it fits in Jonas' code, ok bye <3 */	
-	print_card("Jonas is cool :)", name);
+	print_card(news[card], name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card2("Jonas is cool :)", name);
+	print_card2(news[card], name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card("Jonas is cool :)", name);
+	print_card(news[card], name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card2("Jonas is cool :)", name);
+	print_card2(news[card], name);
 	this_thread::sleep_for(chrono::seconds(2));
 
 	return (0);
