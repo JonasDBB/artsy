@@ -1,6 +1,9 @@
 #include <iostream>
 #include <unistd.h>
+#include <thread>
+#include <chrono>
 
+using namespace std;
 
 void intro()
 {
@@ -12,7 +15,7 @@ void intro()
       //SANTA
       for (int i = 0; i < 4; i++)
       {
-      usleep(1000035);
+      this_thread::sleep_for(chrono::seconds(1));
       system ("clear");
       if (i < 8)
             std::cout << intro[i] << std::endl;
@@ -23,7 +26,7 @@ void intro()
         \033[0;97m*\033[0;33m     \\        \\     \\        \\       \033[38;5;28m( (    \033[0;91m(___|\033[0;33m__)\033[38;5;28m/ /\033[0;97m*     \n\
          *                      *              \033[38;5;28m\\ \\____| |___/ /  \n\
                       \033[0;97m*                         \033[38;5;28m\\____________/\033[0;97m        *" << std::endl;
-      usleep(1000035);
+      this_thread::sleep_for(chrono::seconds(1));
       system ("clear");
       if (i < 8)
             std::cout << intro[i] << std::endl;
@@ -46,7 +49,7 @@ void intro()
            ___ /_________\\   \033[38;5;28m//|\\\\\e[0m   /___________\\  /_________\\  \n\
           /___\\ |[] _ []|    \033[38;5;28m//|\\\\\e[0m    | A /^\\ A |    |[] _ []| _.O,_\n\
       ....|\"#\"|.|  |*|  |...\033[38;5;28m///|\\\\\\\e[0m...|   |\"|   |....|  |*|  |..(^).... " << std::endl;
-       usleep(1000025);
+       this_thread::sleep_for(chrono::seconds(1));
             system ("clear");
 
       std::cout << "\n\n         .-.                                                   \\ /\n\
@@ -59,7 +62,7 @@ void intro()
           /___\\ |[] _ []|    \033[38;5;28m//|\\\\\e[0m    | A /^\\ A |    |[] _ []| _.O,_\n\
       ....|\"#\"|.|  |*|  |...\033[38;5;28m///|\\\\\\\e[0m...|   |\"|   |....|  |*|  |..(^).... " << std::endl;
       
-       usleep(1000015);
+       this_thread::sleep_for(chrono::seconds(1));
             system ("clear");
 
       //TREE
@@ -74,7 +77,7 @@ void intro()
       .\033[38;5;196mo\033[38;5;46m.\'.\033[38;5;196mo\033[38;5;46m.\'.\033[38;5;196mo\033[38;5;46m.\'.\e[0m _\033[38;5;196mX\e[0m_\n\
          \033[38;5;130m[_____]   \e[0m|   |\n\
           \033[38;5;130m\\___/    \e[0m|___|   " << std::endl;
-		usleep(1000015);
+		this_thread::sleep_for(chrono::seconds(1));
 		system ("clear");   
 }   
 
