@@ -9,15 +9,21 @@ int main()
     "There was a panda born in Ouwehands Dierenpark. :)",\
     "An elephant was born in Artis.",\
     "100-Year-Old Tortoise Saved His Species",\
-    "Whales Returned to New York City",\
+    "Whales returned to New York City",\
     "Lions were born in Amersfoort.", \
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
-    "Sweden Went Coal-Free.",\
+    "Sweden went coal-free.",\
     "Lower air pollution during lockdown said to improve crops",\
-    "Cat missing for three years was reunited with UK owner."};
+    "Cat missing for three years was reunited with UK owner.",\
+	"Victor Glover became first black long-term astronaut at ISS.",\
+	"Lower air pollution may improve crop production",\
+	"Number of unemployed people drops for third month in a row.",\
+	"Pet adoptions have increased dramatically.",\
+	"Mother Nature is getting a much-needed respite.",\
+	"Netherlands is winner of Eurovision for second year in a row."}
 
-    for (int i = 0; i < 13; i++)
+    for (int i = 0; i < 19; i++)
         std::cout << happ[i] << std::endl;
     //"Victor J. Glover Jr. became the first Black astronaut to embark on a long-term stay at the ISS."
     return (0);
