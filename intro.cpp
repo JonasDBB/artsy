@@ -15,7 +15,7 @@ void intro()
       //SANTA
       for (int i = 0; i < 4; i++)
       {
-      this_thread::sleep_for(chrono::seconds(1));
+      this_thread::sleep_for(chrono::seconds(2));
       system ("clear");
       if (i < 8)
             std::cout << intro[i] << std::endl;
@@ -26,7 +26,7 @@ void intro()
         \033[0;97m*\033[0;33m     \\        \\     \\        \\       \033[38;5;28m( (    \033[0;91m(___|\033[0;33m__)\033[38;5;28m/ /\033[0;97m*     \n\
          *                      *              \033[38;5;28m\\ \\____| |___/ /  \n\
                       \033[0;97m*                         \033[38;5;28m\\____________/\033[0;97m        *" << std::endl;
-      this_thread::sleep_for(chrono::seconds(1));
+      this_thread::sleep_for(chrono::seconds(2));
       system ("clear");
       if (i < 8)
             std::cout << intro[i] << std::endl;
@@ -49,7 +49,7 @@ void intro()
            ___ /_________\\   \033[38;5;28m//|\\\\\e[0m   /___________\\  /_________\\  \n\
           /___\\ |[] _ []|    \033[38;5;28m//|\\\\\e[0m    | A /^\\ A |    |[] _ []| _.O,_\n\
       ....|\"#\"|.|  |*|  |...\033[38;5;28m///|\\\\\\\e[0m...|   |\"|   |....|  |*|  |..(^).... " << std::endl;
-       this_thread::sleep_for(chrono::seconds(1));
+       this_thread::sleep_for(chrono::seconds(2));
             system ("clear");
 
       std::cout << "\n\n         .-.                                                   \\ /\n\

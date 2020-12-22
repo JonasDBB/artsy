@@ -4,7 +4,7 @@
 #include <string.h>
 #include <fstream>
 #include "boxies.hpp"
-#define CARDS 26
+#define CARDS 31
 
 void		print_card(std::string news, std::string name, bool hasemoji);
 void		print_card2(std::string news, std::string name, bool hasemoji);
@@ -99,7 +99,7 @@ int	main(int argc, char **argv)
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
     "Sweden went coal-free.",\
-    "Lower air pollution during lockdown said to improve crops",\
+    "Lower air pollution during lockdown said to improve crops.",\
     "Cat missing for three years was reunited with UK owner.",\
 	"Victor Glover first black long-term astronaut at ISS.",\
 	"Lower air pollution may improve crop production.",\
@@ -107,13 +107,19 @@ int	main(int argc, char **argv)
 	"Pet adoptions have increased dramatically.",\
 	"Mother Nature is getting a much-needed respite.",\
 	"Netherlands winner of Eurovision for second year in row.",\
-	"Codam advanced is fianlly finished.",\
+	"Codam advanced is finally finished.",\
 	"Codam hosted a 50/50 gender balanced piscine.",\
 	"Codam got a new coffee machine!",\
 	"Codam was donated frisbees by Marianne!",\
 	"Animal Crossing New Horizons came out this year!",\
 	"Among us got a major popularity boost!",\
-	"Jeffrey made a beautiful Discord for us~"};
+	"Jeffrey made a beautiful Discord for us~",\
+	"Same-sex marriage legislation in Northern Ireland. 💖",\
+	"Trump is not re-elected as President of the USA.",\
+	"We got to know our new staff member Yasmine.",\
+	"We got to know our new staff member Victoria.",\
+	"Pete Buttigieg is the first LGBTQ American cabinet nominee. 🏳️‍🌈"\
+	};
 
 	int exit = 0;
 	std::string next;
