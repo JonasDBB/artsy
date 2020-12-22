@@ -49,7 +49,7 @@ void intro()
        usleep(1000025);
             system ("clear");
 
-      std::cout << "         .-.                                                   \\ /\n\
+      std::cout << "\n\n         .-.                                                   \\ /\n\
         ( (                                |                  - * -\n\
          \'-`                              -+-                  / \\\n\
                   \\            \033[38;5;220mo\e[0m          _|_          \\\n\
