@@ -27,14 +27,21 @@ int pickACard(void)
 	string input((istreambuf_iterator<char>(ifs)), istreambuf_iterator<char>());
 	ifs.close();
 	int i = 0;
+	int already_used = 0;
 	while (input[i])
 	{
-		int j = input[i] - '0';
+		int j = 0;
+		while (input[i] != '\n')
+		{
+			j = j * 10 + (input[i] - '0');
+			i++;
+		}
+		already_used++;
 		crds[j] = 1;
 		i++;
 	}
 	ofstream ofs;
-	if (i == 5)
+	if (already_used == CARDS)
 	{
 		ofs.open("checkcards.txt", ios::trunc);
 			for (int i = 0; i < CARDS; i++)
@@ -45,7 +52,7 @@ int pickACard(void)
 	int ran = rand() % CARDS;
 	while (crds[ran])
 		ran = rand() % CARDS;
-	ofs << ran;
+	ofs << ran << endl;
 	ofs.close();
 	return (ran);
 }
@@ -62,22 +69,22 @@ int	main(int argc, char **argv)
 	intro();
 	system("clear");
 	cout << boxy0 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	cout << boxy1 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	cout << boxy2 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	cout << boxy3 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	cout << boxy4 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	cout << boxy5 << endl;
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	
 	int card = pickACard();
@@ -102,16 +109,16 @@ int	main(int argc, char **argv)
 	"Netherlands winner of Eurovision for second year in row."};
 
 	print_card(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	print_card2(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	print_card(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
+	this_thread::sleep_for(chrono::seconds(0));
 	system("clear");
 	print_card2(news[card], name);
-	this_thread::sleep_for(chrono::seconds(2));
+	this_thread::sleep_for(chrono::seconds(0));
 
 	return (0);
 }

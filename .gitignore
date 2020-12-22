@@ -1,0 +1,6 @@
+.vscode/
+a.out
+checkcards.txt
+presents.txt
+*.o
+present

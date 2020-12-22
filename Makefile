@@ -6,14 +6,14 @@
 #    By: rixt <marvin@codam.nl>                       +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/12/22 09:12:48 by rixt          #+#    #+#                  #
-#    Updated: 2020/12/22 09:14:21 by rixt          ########   odam.nl          #
+#    Updated: 2020/12/22 12:13:09 by jonasbb       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = present
 OBJ = boxie.o intro.o card.o
 CC = clang++
-FLAGS = -Wall -Werror -Wextra -std=c++98
+FLAGS = -Wall -Werror -Wextra
 INC = boxies.hpp
 
 .PHONY: all clean fclean re test
