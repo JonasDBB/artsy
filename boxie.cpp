@@ -86,16 +86,16 @@ int	main(int argc, char **argv)
     "We welcomed a new cohort!",\
     "There was a panda born in Ouwehands Dierenpark. :)",\
     "An elephant was born in Artis.",\
-    "100-Year-Old Tortoise Saved His Species",\
+    "A 100-Year-Old Tortoise Saved His Species!",\
     "Whales returned to New York City",\
-    "Lions were born in Amersfoort.", \
+    "Lions were born in Amersfoort Zoo.", \
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
     "Sweden went coal-free.",\
     "Lower air pollution during lockdown said to improve crops",\
     "Cat missing for three years was reunited with UK owner.",\
 	"Victor Glover first black long-term astronaut at ISS.",\
-	"Lower air pollution may improve crop production",\
+	"Lower air pollution may improve crop production.",\
 	"Number of unemployed people drops for third month in row.",\
 	"Pet adoptions have increased dramatically.",\
 	"Mother Nature is getting a much-needed respite.",\
