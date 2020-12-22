@@ -102,15 +102,9 @@ int	main(int argc, char **argv)
 	"Netherlands winner of Eurovision for second year in row."};
 
 	int exit = 0;
-	int i = 0;
 	std::string next;
 	while (exit != -1)
 	{
-		if (i == CARDS)
-		{
-			std::cout << "Those were all the cards!\nMerry Christmas and Happy New Year!!" << std::endl;
-			break;
-		}
 		card = pickACard();
 		print_card(news[card], name);
 		this_thread::sleep_for(chrono::seconds(1));
@@ -134,7 +128,6 @@ int	main(int argc, char **argv)
 			}
 			system("clear");	
 		}
-		i++;
 		next = "";
 	}
 	return (0);
