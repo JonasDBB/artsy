@@ -4,7 +4,7 @@
 #include <string.h>
 #include <fstream>
 #include "boxies.hpp"
-#define CARDS 16
+#define CARDS 19
 
 void		print_card(std::string news, std::string name);
 void		print_card2(std::string news, std::string name);
@@ -80,15 +80,15 @@ int	main(int argc, char **argv)
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
 	
-	int card = pickACard();
+	int card;
 	std::string news[] = {"There has not been a corona outbreak at Codam.",\
-    "We were able to host 3 piscines during the pandemic.",\
+    "We were able to host 3 piscines during a pandemic.",\
     "We welcomed a new cohort!",\
-    "There was a panda born in Ouwehands Dierenpark. :)",\
-    "An elephant was born in Artis.",\
-    "A 100-Year-Old Tortoise Saved His Species!",\
-    "Whales returned to New York City",\
-    "Lions were born in Amersfoort Zoo.", \
+    "There was a panda born in Ouwehands Dierenpark. 🐼",\
+    "An elephant was born in Artis. 🐘",\
+    "A 100-Year-Old Tortoise Saved His Species! 🐢",\
+    "Whales returned to New York City. 🐳",\
+    "Lions were born in Amersfoort Zoo. 🦁", \
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
     "Sweden went coal-free.",\
@@ -101,17 +101,41 @@ int	main(int argc, char **argv)
 	"Mother Nature is getting a much-needed respite.",\
 	"Netherlands winner of Eurovision for second year in row."};
 
-	print_card(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
-	system("clear");
-	print_card2(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
-	system("clear");
-	print_card(news[card], name);
-	this_thread::sleep_for(chrono::seconds(1));
-	system("clear");
-	print_card2(news[card], name);
-	this_thread::sleep_for(chrono::seconds(2));
-
+	int exit = 0;
+	int i = 0;
+	std::string next;
+	while (exit != -1)
+	{
+		if (i == CARDS)
+		{
+			std::cout << "Those were all the cards!\nMerry Christmas and Happy New Year!!" << std::endl;
+			break;
+		}
+		card = pickACard();
+		print_card(news[card], name);
+		this_thread::sleep_for(chrono::seconds(1));
+		system("clear");
+		print_card2(news[card], name);
+		this_thread::sleep_for(chrono::seconds(1));
+		system("clear");
+		print_card(news[card], name);
+		this_thread::sleep_for(chrono::seconds(1));
+		system("clear");
+		print_card2(news[card], name);
+		this_thread::sleep_for(chrono::seconds(2));
+		while (next != "\n")
+		{
+			std::cout << "Take another card!\n\t(　･ω･)☞ *press enter*" << std::endl;
+			next = std::cin.get();
+			if (next != "\n")
+			{
+				exit = -1;
+				break;
+			}
+			system("clear");	
+		}
+		i++;
+		next = "";
+	}
 	return (0);
 }
