@@ -6,7 +6,7 @@
 /*   By: rixt <marvin@codam.nl>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/21 18:50:56 by rixt          #+#    #+#                 */
-/*   Updated: 2020/12/22 09:37:19 by rixt          ########   odam.nl         */
+/*   Updated: 2020/12/22 09:54:03 by rixt          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void		print_card(std::string news, std::string name)
 	std::cout << RD << "|\n";
 	std::cout << "|" << CL << "                                 +                  *         " << RD << "|\n";
 	std::cout << "|" << CL << "    Sincerely,       *                     .                  " << RD << "|\n";
-	std::cout << "|" << CL << "    Santa                 .                      o            " << RD << "|\n";
+	std::cout << "|" << CL << "    Santa  ♡              .                      o            " << RD << "|\n";
 	std::cout << "|                                                              |\n";
 
 	std::cout << "|";
@@ -117,7 +117,7 @@ void		print_card2(std::string news, std::string name)
 	std::cout << RD << "|\n";
 	std::cout << "|" << CL << "                                 *                  .         " << RD << "|\n";
 	std::cout << "|" << CL << "    Sincerely,       .                     +                  " << RD << "|\n";
-	std::cout << "|" << CL << "    Santa                 +                      *            " << RD << "|\n";
+	std::cout << "|" << CL << "    Santa ♡ ♡             +                      *            " << RD << "|\n";
 	std::cout << "|                                                              |\n";
 
 	std::cout << "|";
