@@ -50,8 +50,13 @@ int pickACard(void)
 	return (ran);
 }
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	std::string name;
+	if (argc < 2)
+		name = "Everyone";
+	else
+		name = argv[1];
 	srand(time(NULL));
 	system("clear");
 	intro();
@@ -79,16 +84,16 @@ int	main(void)
 
 
 	/* Hi team, this code below is for now, because it works. But it cant show the randomization in pickACard function from Jonas, so Jonas is going to put these lines where they belong, because this is an animation and it looks cool, so i hope it fits in Jonas' code, ok bye <3 */	
-	print_card("Jonas is cool :)", "Jonas");
+	print_card("Jonas is cool :)", name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card2("Jonas is cool :)", "Jonas");
+	print_card2("Jonas is cool :)", name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card("Jonas is cool :)", "Jonas");
+	print_card("Jonas is cool :)", name);
 	this_thread::sleep_for(chrono::seconds(1));
 	system("clear");
-	print_card2("Jonas is cool :)", "Jonas");
+	print_card2("Jonas is cool :)", name);
 	this_thread::sleep_for(chrono::seconds(2));
 
 	return (0);
