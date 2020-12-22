@@ -6,7 +6,7 @@
 /*   By: rixt <marvin@codam.nl>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/21 18:50:56 by rixt          #+#    #+#                 */
-/*   Updated: 2020/12/21 23:59:40 by rixt          ########   odam.nl         */
+/*   Updated: 2020/12/22 09:37:19 by rixt          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void		print_card(std::string news, std::string name)
 	std::cout << RD << "|\n";
 
 	std::cout << "|                                                              |\n";
-	std::cout << "|" << CL << "    Positive news from 2020:                                  " << RD << "|\n";
+	std::cout << "|" << CL << "    Positive news from 2020:                         .        " << RD << "|\n";
 	std::cout << "|                                                              |\n";
 	std::cout << "|    " << CL << news;
 	for (int i = 0; i < 58-newslen; i++)
@@ -109,7 +109,7 @@ void		print_card2(std::string news, std::string name)
 	std::cout << RD << "|\n";
 
 	std::cout << "|                                                              |\n";
-	std::cout << "|" << CL << "    Positive news from 2020:                                  " << RD << "|\n";
+	std::cout << "|" << CL << "    Positive news from 2020:                         o        " << RD << "|\n";
 	std::cout << "|                                                              |\n";
 	std::cout << "|    " << CL << news;
 	for (int i = 0; i < 58-newslen; i++)
