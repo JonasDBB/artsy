@@ -118,7 +118,7 @@ int	main(int argc, char **argv)
 	"Trump is not re-elected as President of the USA.",\
 	"We got to know our new staff member Yasmine.",\
 	"We got to know our new staff member Victoria.",\
-	"Pete Buttigieg is the first LGBTQ American cabinet nominee. 🏳️‍🌈"\
+	"Pete Buttigieg first LGBTQ American cabinet nominee. 🏳️‍🌈"\
 	};
 
 	int exit = 0;
