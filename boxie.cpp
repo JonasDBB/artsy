@@ -129,7 +129,7 @@ int	main(int argc, char **argv)
 		i++;
 		card = pickACard();
 		bool hasemoji = false;
-		if (card >=3 && card <= 8)
+		if (card >=3 && card <= 7)
 			hasemoji = true;
 		print_card(news[card], name, hasemoji);
 		this_thread::sleep_for(chrono::seconds(1));
