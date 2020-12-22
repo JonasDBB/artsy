@@ -4,7 +4,7 @@
 #include <string.h>
 #include <fstream>
 #include "boxies.hpp"
-#define CARDS 19
+#define CARDS 21
 
 void		print_card(std::string news, std::string name, bool hasemoji);
 void		print_card2(std::string news, std::string name, bool hasemoji);
@@ -106,7 +106,9 @@ int	main(int argc, char **argv)
 	"Number of unemployed people drops for third month in row.",\
 	"Pet adoptions have increased dramatically.",\
 	"Mother Nature is getting a much-needed respite.",\
-	"Netherlands winner of Eurovision for second year in row."};
+	"Netherlands winner of Eurovision for second year in row.",\
+	"Codam advanced is fianlly finished.",\
+	"Codam hosted a 50/50 gender balanced piscine."};
 
 	int exit = 0;
 	std::string next;
