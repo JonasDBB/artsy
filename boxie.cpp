@@ -8,6 +8,7 @@
 
 void		print_card(std::string news, std::string name);
 void		print_card2(std::string news, std::string name);
+void		intro(void);
 
 using namespace std;
 
@@ -52,6 +53,8 @@ int pickACard(void)
 int	main(void)
 {
 	srand(time(NULL));
+	system("clear");
+	intro();
 	system("clear");
 	cout << boxy0 << endl;
 	this_thread::sleep_for(chrono::seconds(1));

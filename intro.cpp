@@ -76,8 +76,8 @@ void intro()
           \033[38;5;130m\\___/    \e[0m|___|   " << std::endl;      
 }   
 
-int main()
-{
-      intro();
-      return (0);
-}
+//int main()
+//{
+//	intro();
+//	return (0);
+//}
