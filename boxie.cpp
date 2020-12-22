@@ -96,7 +96,7 @@ int	main(int argc, char **argv)
     "A 100-Year-Old Tortoise Saved His Species! 🐢",\
     "Whales returned to New York City. 🐳",\
     "Lions were born in Amersfoort Zoo. 🦁", \
-	"Pete Buttigieg first LGBTQ American cabinet nominee. 🏳️‍🌈", \
+	"Pete Buttigieg first LGBTQ American cabinet nominee.", \
     "Jupiter and Saturn aligned again. The last time was 1623!",\
     "No new cases of wild poliovirus recorded since 2016.",\
     "Sweden went coal-free.",\
